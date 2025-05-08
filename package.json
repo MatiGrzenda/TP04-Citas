@@ -1,5 +1,6 @@
 {
   "name": "tp-citas",
+  "homepage": "https://github.com/MatiGrzenda/TP04-Citas.git",
   "private": true,
   "version": "0.0.0",
   "type": "module",
