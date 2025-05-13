@@ -2,9 +2,9 @@ import Cita from "./Cita.jsx"
 import Subtitulo from './Subtitulo.jsx'
 import './Listado.css'
 
-export default function Listado({listaCitas}) {
+export default function Listado(props) {
 
-    cards = listaCitas.map((cita, index) => <Cita key={index} nombreMascota={cita.nombreMascota} nombreDueño={cita.nombreDueño} fecha={cita.fecha} hora={cita.hora} sintomasText={cita.sintomasText} />);
+    let cards = props.listaCitas.map((cita, index) => <Cita key={index} nombreMascota={cita.nombreMascota} nombreDueño={cita.nombreDueño} fecha={cita.fecha} hora={cita.hora} sintomasText={cita.sintomasText} />);
     return (
         <div className="one-half column">
             <Subtitulo subtitulo="Administra tus citas" />
