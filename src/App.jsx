@@ -7,7 +7,6 @@ import './App.css'
 function App() {
   return (
     <>
-      <div id="root">
         <Titulo titulo="Administración de Pacientes" />
         <div className="container">
           <div className="row">
@@ -15,7 +14,6 @@ function App() {
             <Listado />
           </div>
         </div>
-      </div>
     </>
   )
 }
