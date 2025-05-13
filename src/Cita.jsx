@@ -1,4 +1,6 @@
-export default function Citas(props) {
+import './Cita.css'
+
+export default function Cita(props) {
 
     return (
         <>

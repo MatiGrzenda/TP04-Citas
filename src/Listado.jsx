@@ -1,5 +1,6 @@
-import Citas from "./Citas"
+import Citas from "./Cita.jsx"
 import Subtitulo from './Subtitulo.jsx'
+import './Listado.css'
 
 export default function Listado(/*{listaCitas}*/) {
 
