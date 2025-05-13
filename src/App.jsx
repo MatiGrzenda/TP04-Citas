@@ -6,7 +6,7 @@ import Listado from './Listado.jsx'
 import './App.css'
 
 function App() {
-  const [listaCitas, setLista] = useState();
+  const [listaCitas, setLista] = useState([]);
 
   return (
     <>
