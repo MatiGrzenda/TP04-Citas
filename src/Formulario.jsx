@@ -2,11 +2,17 @@ import React from 'react'
 import Subtitulo from './Subtitulo.jsx'
 import './Formulario.css'
 
-export default function Formulario() {
+export default function Formulario(props) {
+    const agregarCita = (e) => {
+        e.preventDefault();
+        let cita = { nombreMascota: e.target.mascota.value, nombreDueño: e.target.propietario.value, fecha: e.target.fecha.value, hora: e.target.hora.value, sintomasText: e.target.sintomas.value };
+        props.setLista([...props.listaCitas, cita]);
+    }
+
     return (
         <div className="one-half column">
             <Subtitulo subtitulo="Crear mi Cita" />
-            <form>
+            <form onSubmit={agregarCita}>
                 <label>Nombre Mascota</label>
                 <input type="text" name="mascota" className="u-full-width" placeholder="Nombre Mascota"></input>
                 <label>Nombre Dueño</label>
