@@ -1,14 +1,14 @@
-export default function Citas(nombreMascota, nombreDueño, fecha, hora, sintomasText) {
-    
+export default function Citas(props) {
+
     return (
         <>
-            <div class="cita">
-                <p>Mascota: <span>{nombreMascota}</span></p>
-                <p>Dueño: <span>{nombreDueño}</span></p>
-                <p>Fecha: <span>{fecha}</span></p>
-                <p>Hora: <span>{hora}</span></p>
-                <p>Sintomas: <span>{sintomasText}</span></p>
-                <button class="button elimnar u-full-width">Eliminar x</button>
+            <div className="cita">
+                <p>Mascota: <span>{props.nombreMascota}</span></p>
+                <p>Dueño: <span>{props.nombreDueño}</span></p>
+                <p>Fecha: <span>{props.fecha}</span></p>
+                <p>Hora: <span>{props.hora}</span></p>
+                <p>Sintomas: <span>{props.sintomasText}</span></p>
+                <button className="button elimnar u-full-width">Eliminar x</button>
             </div>
         </>
     )

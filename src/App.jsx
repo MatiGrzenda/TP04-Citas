@@ -1,14 +1,16 @@
-import { useState } from 'react'
+//import { useState } from 'react'
+import Titulo from './Titulo.jsx'
+import Formulario from './Formulario.jsx'
+import Listado from './Listado.jsx'
 import './App.css'
 
 function App() {
   return (
     <>
-      <title>Administración de Pacientes</title>
       <div id="root">
-      <Titulo titulo="Administración de Pacientes"/>
-        <div class="container">
-          <div class="row">
+        <Titulo titulo="Administración de Pacientes" />
+        <div className="container">
+          <div className="row">
             <Formulario />
             <Listado />
           </div>
