@@ -1,12 +1,16 @@
 //import { useState } from 'react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Titulo from './Titulo.jsx'
 import Formulario from './Formulario.jsx'
 import Listado from './Listado.jsx'
 import './App.css'
 
 function App() {
-  const [listaCitas, setLista] = useState([]);
+  const [listaCitas, setLista] = useState(JSON.parse(localStorage.getItem("lista")) || []);
+
+  useEffect(() => {
+    localStorage.setItem("lista", JSON.stringify(listaCitas));
+  });
 
   return (
     <>
